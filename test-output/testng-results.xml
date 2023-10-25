@@ -1,235 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-09T06:24:22Z" name="Suite" finished-at="2023-10-09T06:27:48Z" duration-ms="205443">
+  <suite started-at="2023-10-18T11:08:23Z" name="Default suite" finished-at="2023-10-18T11:09:42Z" duration-ms="79327">
     <groups>
     </groups>
-    <test started-at="2023-10-09T06:24:22Z" name="Test" finished-at="2023-10-09T06:27:48Z" duration-ms="205443">
-      <class name="com.tmb.tests.AmazonDemoTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:24:24Z" name="setUp" finished-at="2023-10-09T06:24:56Z" duration-ms="31485" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@42c2f48c]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-10-18T11:08:23Z" name="Default test" finished-at="2023-10-18T11:09:42Z" duration-ms="79327">
+      <class name="com.tmb.tests.Monte_Test_Case">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tmb.tests.Monte_Test_Case@e57b96d]" started-at="2023-10-18T11:08:23Z" name="setup" finished-at="2023-10-18T11:09:20Z" duration-ms="57644" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:24:56Z" name="amazonTest" description="To check whether the amazon test is working or not" finished-at="2023-10-09T06:25:15Z" duration-ms="18822" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=, browser=firefox, testname=amazonTest, execute=yes, version=92.0, menutext=Laptops, username=}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[text()='Mobiles, Computers']/parent::a (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:25546, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2952, moz:profile: C:\Users\Lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25546/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3627965b-4a7f-4448-a18d-10c8b5d07731]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[text()='Mobiles, Computers']/parent::a (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:25546, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2952, moz:profile: C:\Users\Lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25546/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3627965b-4a7f-4448-a18d-10c8b5d07731
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.tmb.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:46)
-at com.tmb.pages.BasePage.click(BasePage.java:24)
-at com.tmb.pages.AmazonHamburgerMenuPage.clickComputer(AmazonHamburgerMenuPage.java:14)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:48)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- setup -->
+        <test-method signature="getAppURL()[pri:0, instance:com.tmb.tests.Monte_Test_Case@e57b96d]" started-at="2023-10-18T11:09:21Z" name="getAppURL" finished-at="2023-10-18T11:09:41Z" duration-ms="20923" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:25:17Z" name="tearDown" finished-at="2023-10-09T06:25:20Z" duration-ms="3391" status="PASS">
+        </test-method> <!-- getAppURL -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.tmb.tests.Monte_Test_Case@e57b96d]" started-at="2023-10-18T11:09:41Z" name="Close" finished-at="2023-10-18T11:09:42Z" duration-ms="694" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:25:20Z" name="setUp" finished-at="2023-10-09T06:26:31Z" duration-ms="70588" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3005db4a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:26:31Z" name="amazonTest" description="To check whether the amazon test is working or not" finished-at="2023-10-09T06:26:36Z" duration-ms="5561" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=, browser=edge, testname=amazonTest, execute=yes, version=95.0.1020.9, menutext=Laptops, username=}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (175, 571). Other element would receive the click: <a href="/gp/browse.html?node=2454172031&amp;ref_=nav_em_sbc_mobcomp_office_0_2_8_11" class="hmenu-item">...</a>
-  (Session info: MicrosoftEdge=117.0.2045.60)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [97696687a03689ffe1421481fe360d4c, clickElement {id=40DE671EF10DCCF1495E53F5B0EA1ADC_element_41}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53619}, msedge: {msedgedriverVersion: 117.0.2045.60 (a31cef5dc4c1..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53619/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on windows (97696687a03689ffe1421481fe360d4c)] -> xpath: //a[text()='Laptops']]
-Session ID: 97696687a03689ffe1421481fe360d4c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (175, 571). Other element would receive the click: <a href="/gp/browse.html?node=2454172031&amp;ref_=nav_em_sbc_mobcomp_office_0_2_8_11" class="hmenu-item">...</a>
-  (Session info: MicrosoftEdge=117.0.2045.60)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [97696687a03689ffe1421481fe360d4c, clickElement {id=40DE671EF10DCCF1495E53F5B0EA1ADC_element_41}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53619}, msedge: {msedgedriverVersion: 117.0.2045.60 (a31cef5dc4c1..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53619/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on windows (97696687a03689ffe1421481fe360d4c)] -> xpath: //a[text()='Laptops']]
-Session ID: 97696687a03689ffe1421481fe360d4c
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.tmb.pages.BasePage.click(BasePage.java:25)
-at com.tmb.pages.AmazonHamburgerMenuPage.clickOnSubMenuItem(AmazonHamburgerMenuPage.java:28)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:26:38Z" name="tearDown" finished-at="2023-10-09T06:26:38Z" duration-ms="642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:26:38Z" name="setUp" finished-at="2023-10-09T06:27:43Z" duration-ms="64312" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@425d5d46]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:27:43Z" name="amazonTest" description="To check whether the amazon test is working or not" finished-at="2023-10-09T06:27:46Z" duration-ms="3286" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=, browser=chrome, testname=amazonTest, execute=yes, version=94.0, menutext=Laptops, username=}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 568). Other element would receive the click: <a href="/gp/browse.html?node=2454172031&amp;ref_=nav_em_sbc_mobcomp_office_0_2_8_11" class="hmenu-item">...</a>
-  (Session info: chrome=117.0.5938.149)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9d2e14ca94e4c25752d05b91887e763, clickElement {id=4262C927BA44E2E0FE529B050E64342F_element_29}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53834}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53834/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c9d2e14ca94e4c25752d05b91887e763)] -> xpath: //a[text()='Laptops']]
-Session ID: c9d2e14ca94e4c25752d05b91887e763]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 568). Other element would receive the click: <a href="/gp/browse.html?node=2454172031&amp;ref_=nav_em_sbc_mobcomp_office_0_2_8_11" class="hmenu-item">...</a>
-  (Session info: chrome=117.0.5938.149)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9d2e14ca94e4c25752d05b91887e763, clickElement {id=4262C927BA44E2E0FE529B050E64342F_element_29}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53834}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53834/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c9d2e14ca94e4c25752d05b91887e763)] -> xpath: //a[text()='Laptops']]
-Session ID: c9d2e14ca94e4c25752d05b91887e763
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.tmb.pages.BasePage.click(BasePage.java:25)
-at com.tmb.pages.AmazonHamburgerMenuPage.clickOnSubMenuItem(AmazonHamburgerMenuPage.java:28)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@702b8b12]" started-at="2023-10-09T06:27:48Z" name="tearDown" finished-at="2023-10-09T06:27:48Z" duration-ms="375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tmb.tests.AmazonDemoTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Close -->
+      </class> <!-- com.tmb.tests.Monte_Test_Case -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
